@@ -40,6 +40,8 @@ return [
 
     'domain' => env('FILAMENT_DOMAIN'),
 
+
+    'brand' => 'Maher',
     /*
     |--------------------------------------------------------------------------
     | Auth
@@ -106,7 +108,7 @@ return [
         'path' => app_path('Filament/Widgets'),
         'register' => [
             Widgets\AccountWidget::class,
-            Widgets\FilamentInfoWidget::class,
+            // Widgets\FilamentInfoWidget::class,
         ],
     ],
 
@@ -120,7 +122,7 @@ return [
     |
     */
 
-    'dark_mode' => true,
+    'dark_mode' => false,
 
     /*
      |--------------------------------------------------------------------------
@@ -177,6 +179,10 @@ return [
         'sidebar' => [
             'is_collapsible_on_desktop' => true,
         ],
+        'footer' => [
+            'should_show_logo' => false,
+        ],
+
         'forms' => [
             'actions' => [
                 'alignment' => 'left',
